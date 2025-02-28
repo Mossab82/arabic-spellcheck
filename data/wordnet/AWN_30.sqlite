@@ -1,0 +1,16 @@
+CREATE TABLE synsets (
+    synset_id INTEGER PRIMARY KEY,
+    arabic_lemma TEXT NOT NULL,      -- e.g., "عَلَم"
+    pos TEXT CHECK(pos IN ('n','v','a','r')),
+    definition TEXT,                 -- Arabic definition
+    examples TEXT,                   -- JSON array of usage examples
+    domain TEXT,                     -- general/financial/medical/etc
+    root TEXT                        -- triconsonantal root (e.g., "علم")
+);
+
+CREATE TABLE relations (
+    synset_id INTEGER,
+    target_id INTEGER,
+    relation_type TEXT,              -- hypernym/hyponym/instance_etc
+    FOREIGN KEY(synset_id) REFERENCES synsets(synset_id)
+);
