@@ -1,0 +1,12 @@
+{
+  "priority_synsets": {
+    "مصرف": [600001],  # Bank institution sense
+    "سهم": [700001],   # Stock market sense
+    "قرض": [800001]    # Loan sense
+  },
+  "domain_weights": {
+    "600001": 0.95,
+    "700001": 0.89,
+    "800001": 0.82
+  }
+}
