@@ -1,0 +1,36 @@
+# Core dependencies
+torch==2.0.1
+transformers==4.28.1
+pyarabic==1.0.8
+arabic-transformers==0.1.5
+peft==0.3.0
+pytorch-lightning==2.0.2
+tokenizers==0.13.3
+datasets==2.11.0
+
+# NLP/ML utilities
+nltk==3.8.1
+scikit-learn==1.2.2
+spacy==3.5.3
+aravec==2.0  # Arabic word embeddings
+
+# Numerical/Data
+numpy==1.23.5
+pandas==1.5.3
+scipy==1.10.1
+statsmodels==0.13.5  # For statistical testing
+
+# Deployment
+flask==2.2.3
+gunicorn==20.1.0
+
+# Arabic-specific
+madamira==3.1.0  # Morphological analysis
+arabic-wordnet==1.1  # Semantic disambiguation
+
+# GPU support (optional)
+cudatoolkit==11.8.0; sys_platform == 'linux'
+
+# To install with GPU support:
+pip install -r requirements.txt
+pip install -r requirements.txt --install-option="--gpu"
