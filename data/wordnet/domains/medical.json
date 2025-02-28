@@ -1,0 +1,11 @@
+{
+  "priority_synsets": {
+    "تشخيص": [900001],  # Medical diagnosis
+    "جراحة": [900002],  # Surgery
+    "مصل": [900003]     # Serum
+  },
+  "term_mappings": {
+    "الضغظ": {"correct": "الضغط", "synset": 900004},  # Common typo
+    "السرطن": {"correct": "السرطان", "synset": 900005}
+  }
+}
